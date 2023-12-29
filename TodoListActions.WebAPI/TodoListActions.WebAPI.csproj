@@ -16,4 +16,7 @@
     <ProjectReference Include="..\TodoListActions.Infrastructure\TodoListActions.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+	  <InternalsVisibleTo Include="TodoListActions.Test" />
+  </ItemGroup>
 </Project>
