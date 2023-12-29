@@ -11,18 +11,5 @@
             var response = await client.GetAsync("/api/Task/id=1");
             Assert.Equal(System.Net.HttpStatusCode.OK, response.StatusCode);
         }
-
-        // failing test
-        [Fact]
-        public async Task GetById_InputIs1_ReturnsUnauthorized()
-        {
-            var factory = new TodoListActionsWebApplicationFactory();
-            var client = factory.CreateClient();
-
-            var response = await client.GetAsync("/api/Task/id=1");
-            Assert.Equal(System.Net.HttpStatusCode.Unauthorized, response.StatusCode);
-        }
-
-        // ovo je develop
     }
 }
